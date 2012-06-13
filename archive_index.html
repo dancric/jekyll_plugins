@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% for year in (2007..2011) reversed %}
+    {% for month in (1..12) reversed %}
+        {% for post in site.posts %}
+            {% capture year %}
+            
+            {% endcapture %}
+            
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+
+{{page.archive_content}}
